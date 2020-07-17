@@ -37,14 +37,6 @@ cd tmp/hts_engine_API-1.10
 ./configure --prefix=$bin_dir/hts_engine_1.10
 make install
 
-cd $src_dir/WORLD;
-make
-make analysis synth
-make clean
-
-mkdir $bin_dir/WORLD
-cp $src_dir/WORLD/build/analysis $bin_dir/WORLD
-cp $src_dir/WORLD/build/synth $bin_dir/WORLD
 
 echo "Succeed."
 
